@@ -1,0 +1,354 @@
+/*Iniciando CSS*/
+/* Aplicando estilo a Body */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: hsl(235, 50%, 15%);
+   background-image: url(Imagenes/body/fondodelapantalla.jpg);
+   background-repeat: repeat;
+   background-size: auto;
+   background-attachment: fixed;
+   width: 100%;
+   font-family: 'Play', sans-serif;
+}
+
+header {
+   padding: 20px 0;
+   display: flex; /*Habilita Flexbox*/
+   justify-content: center; /* Alinear horizontalmente*/
+   align-items: center;
+   align-content: center;
+   flex-wrap: wrap;
+}
+
+nav {
+   width: 100%;
+   display: flex; /*Habilita Flexbox*/
+   justify-content: center; /*Centra el contenido*/
+   flex-wrap: wrap;
+   position: fixed;
+   top: 0;
+   background-color: hsl(235, 50%, 10%);
+   z-index: +1;
+   border-bottom: 2px solid hsl(269, 10%, 20%);
+}
+
+.logo {
+   margin: 5px 20px 5px 0px;
+   display: flex;
+}
+
+ul {
+   list-style: none;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+li {
+   padding: 15px;
+   border: 1px solid hsl(269, 40%, 40%);
+   border-radius: 15px;
+   margin: 10px;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+a {
+   color: hsl(269, 40%, 90%);
+   text-decoration: none;
+   font-size: 1rem;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+h1 {
+   font-size: 5rem;
+   padding: 100px;
+   display: flex;
+   justify-content: center;
+   color: hsl(269, 40%, 85%);
+   margin-top: 60px;
+   flex-wrap: wrap;
+}
+
+h2 {
+   font-size: 4rem;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   color: hsl(269, 40%, 85%);
+}
+
+/* Aplicando Grid a Imagenes y video de Presentacion */
+
+.grid-container {
+   flex-wrap: wrap;
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: auto auto auto;
+   gap: 20px;
+   justify-items: center;
+   align-self: inherit;
+
+   grid-template-areas: 
+   'banner banner banner'
+   'imagen1 imagen2 imagen3'
+   'videop videop videop';
+   margin-bottom: 40px;
+}
+
+
+.banner {
+   width: 90%;
+   grid-area: banner;
+   border-radius: 10px;
+   border: 5px solid hsl(235, 50%, 10%);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.imagen-uno {
+   width: 70%;
+   grid-area: imagen1;
+   border-radius: 10px;
+   border: 5px solid hsl(235, 50%, 10%);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-left: 25%;
+}
+
+.imagen-dos {
+   width: 70%;
+   grid-area: imagen2;
+   border-radius: 10px;
+   border: 5px solid hsl(235, 50%, 10%);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.imagen-tres {
+   width: 70%;
+   grid-area: imagen3;
+   border-radius: 10px;
+   border: 5px solid hsl(235, 50%, 10%);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-right: 25%;
+}
+
+.video-uno {
+   grid-area: videop;
+   width: 80%;
+   border-radius: 10px;
+   border: 5px solid hsl(235, 50%, 10%);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.contenedor-image-presentacion {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.image_presentacion {
+   margin: 5px;
+   border-radius: 30px;
+   border: 5px solid hsl(235, 50%, 10%);
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/* Contenedor de Imagenes de Streamers */
+
+.fondo-1 {
+   margin-bottom: 10px;
+}
+
+.fondo-2 {
+   background-color: hsl(235, 30%, 5%);
+   background-size: cover;
+   background-attachment: fixed;
+   margin-bottom: 10px;
+}
+
+#streamers {
+   padding: 100px;
+}
+
+.contenedor-img-streamers {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   margin: 40px;
+   flex-wrap: wrap;
+}
+
+.img-streamers {
+   width: 200px;
+   height: 200px;
+   border-radius: 25px;
+   margin: 20px;
+   border: 2px solid hsl(269, 40%, 85%);
+}
+
+/* Equipos de E-sports */
+
+#esport {
+   padding: 100px;
+}
+
+.contenedor-img-juego {
+   margin: 40px;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.img-juegos {
+   width: 450px;
+   height: 280px;
+   margin: 100px 20px;
+   border-radius: 25px;
+   border: 2px solid hsl(235, 50%, 10%);
+}
+
+.contenedor-img-jugadores {
+   width: 30%;
+   margin: 0px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+}
+
+.img-jugadores {
+border: 5px solid hsl(235, 50%, 10%);
+border-radius: 25px;
+width: 100px;
+height: 100px;
+margin: 20px;
+}
+
+/* Seccion Gaming House */
+
+#gaminghouse {
+   padding: 100px;
+}
+
+.gaminghouse {
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 40px;
+}
+
+.iframe {
+   margin: 20px;
+   border-radius: 25px;
+   border: 2px solid hsl(269, 40%, 85%);
+}
+
+/* Seccion Partners */
+
+#partners {
+   padding: 100px;
+}
+
+.contenedor-img-partners {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   padding: 40px;
+}
+
+.columna1 {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap   ;
+}
+
+.columna2 {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.img-partners {
+   width: 200px;
+   height: 200px;
+   margin: 20px;
+   border-radius: 25px;
+   border: 2px solid hsl(235, 50%, 10%);
+}
+
+/* Seccion Contactanos */
+
+.nuestras-redes {
+   height: 100px;
+   background-color: hsl(235, 30%, 5%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.contenedor-img-nuestras-redes {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 60%;
+   justify-content: center;
+}
+
+.img-nuestras-redes {
+   width: 60%;
+   margin: 10px;
+}
+
+.copyright {
+   display: flex;
+   width: 40%;
+   justify-content: center;
+}
+
+p {
+   display: flex;
+   color: hsl(269, 40%, 85%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
